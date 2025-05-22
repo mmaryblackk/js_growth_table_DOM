@@ -56,7 +56,7 @@ addColumnButton.addEventListener('click', () => {
 removeColumnButton.addEventListener('click', () => {
   const currentColumnsCount = table.rows[0].cells.length;
 
-  if (currentColumnsCount > 1) {
+  if (currentColumnsCount > 2) {
     for (const row of table.rows) {
       row.deleteCell(currentColumnsCount - 1);
     }
